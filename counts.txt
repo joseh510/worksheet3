@@ -1,0 +1,7 @@
+verified reviews
+Line count	word count	character count 
+     1     	    315    	     1710
+not verified reviews
+Line count      word count      character count 
+  229345 	 44402549 	   262426411
+

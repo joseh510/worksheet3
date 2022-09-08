@@ -1,0 +1,61 @@
+    1  ping 172.31.197.164
+    2  passwd 22joseli
+    3  passwd
+    4  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    5  git --version
+    6  ls
+    7  git
+    8  pwd
+    9  mkdir ws1
+   10  cd ws1
+   11  ls
+   12  pwd
+   13  git init
+   14  touch ws1_jh_new_file.txt
+   15  ls
+   16  git status
+   17  git add ws1_jh_new_file.txt 
+   18  git status
+   19  git commit -m "This is my first commit"
+   20  git config --global jose.a.hernandez@sjsu.edu
+   21  git config --global user.name "joseh510"
+   22  git commit -m "This is my first commit"
+   23  git commit --amend --reset-author
+   24  ls
+   25  history > cmds.log
+   26  ls
+   27  git remote add origin https://github.com/joseh510/worksheet1.git
+   28  git branch -M main
+   29  git push -u origin main
+   30  gh auth login
+   31  git
+   32  git clone https://github.com/username/repo.git
+   33  git clone https://github.com/joseh510/worksheet1
+   34  ls
+   35  git push origin cmds.log
+   36  ls
+   37  git add .
+   38  pwd
+   39  git add .
+   40  git add cmds.log 
+   41  git commit -m "cmds.log"
+   42  git push origin
+   43  git push --set-upstream origin main
+   44  ls
+   45  worksheet1
+   46  ls
+   47  gzip -d amazon_reviews_us_Books_v1_02.tsv.gz 
+   48  ls
+   49  grep "verified" amazon_reviews_us_Books_v1_02.tsv
+   50  ls
+   51  head -n 2 amazon_reviews_us_Books_v1_02.tsv 
+   52  grep -P '\tY\t' amazon_reviews_us_Books_v1_02.tsv 
+   53  grep -P '\tN\t' amazon_reviews_us_Books_v1_02.tsv
+   54  grep -P '\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   55  grep -P '\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   56  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   57  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc
+   58  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc > counts.txt
+   59  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv | wc >> counts.txt 
+   60  vi counts.txt
+   61  history > cmds.log
