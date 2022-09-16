@@ -1,3 +1,25 @@
+
+worksheet3
+
+Sort the customer IDs in order to find the customer who authored the most reviews. Which customers are the top 3 reviewers (with the most reviews)?
+
+	Top 3 reviewers are 	# of reviews	Customer IDs
+				3) 2664		52615377
+   				2) 9964 	50732546
+ 				1) 21922 	50122160
+
+	I used this command to do it:	cut -d \  -f 2 amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort -n | uniq -c | sort -n | tail -50
+
+Sort the products in order to find the product that has the most reviews. What are the top 3 most reviewed products?
+
+
+	    # of reviews	products
+	   	2707 		3)The Da Vinci Code
+   		3740 		2)Harry Potter And The Goblet Of Fire (Book 4)
+   		4862 		1)Harry Potter and the Order of the Phoenix (Book 5)
+
+	I used this command to do it:   cut -d \  -f 6 amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort -n | uniq -c | sort -n | tail -50
+
 Script started on 2022-09-15 22:44:23-04:00
 ]0;jose@sjsu:~[jose@sjsu ~]$ script ws3.txtls[Khistory > cmds.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Khistory > cmds.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kscript ws3.txt[Kcut -d \       -f 2 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -n | tail -50
    4066 Are
