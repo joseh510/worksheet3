@@ -1,0 +1,180 @@
+
+worksheet3
+
+Sort the customer IDs in order to find the customer who authored the most reviews. Which customers are the top 3 reviewers (with the most reviews)?
+
+	Top 3 reviewers are 	# of reviews	Customer IDs
+				3) 2664		52615377
+   				2) 9964 	50732546
+ 				1) 21922 	50122160
+
+	I used this command to do it:	cut -d \  -f 2 amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort -n | uniq -c | sort -n | tail -50
+
+Sort the products in order to find the product that has the most reviews. What are the top 3 most reviewed products?
+
+
+	    # of reviews	products
+	   	2707 		3)The Da Vinci Code
+   		3740 		2)Harry Potter And The Goblet Of Fire (Book 4)
+   		4862 		1)Harry Potter and the Order of the Phoenix (Book 5)
+
+	I used this command to do it:   cut -d \  -f 6 amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort -n | uniq -c | sort -n | tail -50
+
+Script started on 2022-09-15 22:44:23-04:00
+]0;jose@sjsu:~[jose@sjsu ~]$ script ws3.txtls[Khistory > cmds.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Khistory > cmds.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kscript ws3.txt[Kcut -d \       -f 2 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -n | tail -50
+   4066 Are
+   4102 Big
+   4255 Power
+   4286 World
+   4300 Love
+   4858 Life
+   4898 Me
+   5004 American
+   5117 How
+   5124 An
+   5129 In
+   5254 Best
+   5324 Man
+   5334 Little
+   5426 :
+   5433 To
+   5749 First
+   6044 Secret
+   6318 With
+   6322 My
+   6572 Great
+   6741 is
+   7132 Of
+   7317 by
+   7926 Art
+   7975 Is
+   8010 I
+   8278 For
+   8281 Guide
+   8427 at
+   8446 You
+   9745 Book
+   9986 Last
+  10063 from
+  12195 Complete
+  12403 New
+  12574 with
+  14326 Your
+  15011 &
+  15105 a
+  15694 on
+  19649 Potter
+  28161 for
+  44587 A
+  46258 in
+  47435 The
+  52982 to
+  67252 and
+  78361 the
+ 142023 of
+]0;jose@sjsu:~[jose@sjsu ~]$ cut -d \       -f 2 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -n | tail -50[C[1P[1P[1P[1P[1P[1P[1P[1@ [1@\[1P[1@\[1P[1@'[1P[1@"[1@\[1P[1P[1@t[1@"[C[1P[1P[1@t[1Pscript ws3.txt[Kls[Khistory > cmds.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcut -d \  -f 2 amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort -n | tail -n 40u[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K | sort -n | uniq -c | sort -n | tail -50
+    683 51325095
+    693 53009736
+    697 51379338
+    699 53072811
+    710 51243012
+    731 49202417
+    735 52496677
+    735 52774618
+    742 52830980
+    744 50652563
+    744 51934027
+    754 51065232
+    757 53084107
+    763 49992211
+    782 53082946
+    790 52894384
+    802 52797744
+    822 49355567
+    822 52564468
+    842 49447323
+    844 52173832
+    850 52793250
+    873 52938698
+    884 41012519
+    896 49148452
+    901 49273674
+    931 50774468
+    939 52476938
+    966 50199793
+    995 43546353
+    996 51147790
+    997 50068216
+   1006 50608834
+   1023 49115690
+   1036 49750558
+   1039 51987970
+   1159 52254603
+   1263 50881246
+   1300 36642996
+   1336 38491967
+   1384 49693975
+   1416 39569598
+   1622 45273033
+   1643 20595117
+   1786 50913245
+   1797 50776149
+   2215 45041039
+   2664 52615377
+   9964 50732546
+  21922 50122160
+]0;jose@sjsu:~[jose@sjsu ~]$ ls[K[Kls[K[Kcut -d \  -f 2 amazon_reviews_us_Books_v1_02.tsv | sort -n | uniq -c | sort -n | tail -50[1P[1@6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    841 The Poisonwood Bible (Oprah's Book Club)
+    855 Atlas Shrugged
+    869 The Rule of Four
+    874 The Perks of Being a Wallflower
+    886 Harry Potter and the Sorcerer's Stone
+    890 The Coldest Winter Ever
+    899 The Secret Life of Bees
+    906 The Notebook
+    916 A Game of Thrones (A Song of Ice and Fire, Book 1)
+    917 Natural Cures "They" Don't Want You to Know about
+    924 The Path of Daggers (The Wheel of Time, Book 8)
+    935 The Brethren
+    940 A Painted House
+    967 The Red Tent
+    970 A Walk to Remember
+    973 To Kill a Mockingbird
+    979 Stupid White Men ...And Other Sorry Excuses for the State of the Nation!
+    983 A Child Called It: One Child's Courage to Survive
+   1003 Slander: Liberal Lies About the American Right
+   1026 The Eye of the World (The Wheel of Time, Book 1)
+   1026 Winter's Heart (The Wheel of Time, Book 9)
+   1067 Eragon (Inheritance)
+   1090 Who Moved My Cheese?: An Amazing Way to Deal with Change in Your Work and in Your Life
+   1093 Tuesdays with Morrie: An Old Man, A Young Man and Life's Greatest Lesson
+   1139 Fast Food Nation: The Dark Side of the All-American Meal
+   1139 The Nanny Diaries: A Novel
+   1147 The Five People You Meet In Heaven
+   1195 Memoirs of a Geisha: A Novel
+   1204 Ender's Game (The Ender Quintet)
+   1233 Harry Potter and the Chamber of Secrets
+   1240 Rich Dad, Poor Dad: What the Rich Teach Their Kids About Money--That the Poor and Middle Class Do Not!
+   1295 Life of Pi
+   1321 Left Behind: A Novel of the Earth's Last Days (Left Behind No. 1)
+   1382 Harry Potter And The Prisoner Of Azkaban
+   1390 The American Prophecies: Ancient Scriptures Reveal Our Nation's Future
+   1394 Angels & Demons
+   1500 Deliver Us from Evil: Defeating Terrorism, Despotism, and Liberalism
+   1531 Hannibal: A Novel
+   1602 Timeline
+   1686 The Catcher in the Rye
+   1772 Crossroads of Twilight (The Wheel of Time, Book 10)
+   1829 Treason: Liberal Treachery from the Cold War to the War on Terrorism
+   2181 The Lovely Bones
+   2202 Harry Potter and the Half-Blood Prince (Book 6)
+   2366 Harry Potter And The Sorcerer's Stone
+   2615 Unfit For Command: Swift Boat Veterans Speak Out Against John Kerry
+   2666 Lies and the Lying Liars Who Tell Them
+   2707 The Da Vinci Code
+   3740 Harry Potter And The Goblet Of Fire (Book 4)
+   4862 Harry Potter and the Order of the Phoenix (Book 5)
+]0;jose@sjsu:~[jose@sjsu ~]$ history >>c[K cmds.log
+]0;jose@sjsu:~[jose@sjsu ~]$ exit
+
+Script done on 2022-09-15 23:25:32-04:00
